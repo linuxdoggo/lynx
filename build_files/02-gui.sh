@@ -27,7 +27,7 @@ dnf5 -y copr disable zirconium/packages
 # this installs a package from fedora repos
 dnf5 install -y \
     google-roboto-fonts \
-    sddm \
+    gdm \
     brightnessctl \
     alacritty \
     rsms-inter-fonts \
@@ -35,6 +35,6 @@ dnf5 install -y \
 
 rm -rf /usr/share/doc/just
 
-systemctl enable sddm.service 
+systemctl enable gdm.service 
     
     
