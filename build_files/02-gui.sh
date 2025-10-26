@@ -4,6 +4,9 @@ set -ouex pipefail
 
 ### Install packages
 
+install -d /usr/share/lynx
+install -d /etc/niri
+
 dnf -y install 'dnf5-command(config-manager)'
 
 dnf5 -y copr enable yalter/niri-git
@@ -21,7 +24,7 @@ dnf5 -y install quickshell-git
 dnf5 -y copr disable errornointernet/quickshell
 
 dnf5 -y copr enable zirconium/packages
-dnf5 -y install matugen 
+dnf5 -y install matugen cliphist
 dnf5 -y copr disable zirconium/packages
 
 dnf -y install \
@@ -49,11 +52,12 @@ dnf5 install -y \
     xwayland-satellite \
     xdg-user-dirs \
     wireplumber \
+    xdg-desktop-portal \
+    wlsunset \
     cava
 
 rm -rf /usr/share/doc/just
 
-#systemctl enable greetd
 systemctl enable firewalld
     
     
