@@ -31,6 +31,12 @@ dnf5 -y copr enable rivenirvana/ghostty
 dnf5 -y install ghostty
 dnf5 -y copr disable rivenirvana/ghostty
 
+dnf5 -y \
+    copr enable atim/starship
+    install starship
+    copr disable atim/starship
+
+
 dnf -y install \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
