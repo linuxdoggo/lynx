@@ -18,6 +18,7 @@ dnf5 install -y \
   tuned \
   tuned-ppd \
   firewalld \
+  rsync \
   rclone
 
 dnf -y remove console-login-helper-messages \
