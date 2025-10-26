@@ -27,6 +27,10 @@ dnf5 -y copr enable zirconium/packages
 dnf5 -y install matugen cliphist
 dnf5 -y copr disable zirconium/packages
 
+dnf5 -y copr enable rivenirvana/ghostty
+dnf5 -y install ghostty
+dnf5 -y copr disable rivenirvana/ghostty
+
 dnf -y install \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
