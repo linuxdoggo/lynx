@@ -17,6 +17,7 @@ dnf5 install -y \
   unzip \
   tuned \
   tuned-ppd \
+  firewalld \
   rclone
 
 dnf -y remove console-login-helper-messages \
