@@ -59,6 +59,8 @@ dnf5 install -y \
 rm -rf /usr/share/doc/just
 systemctl enable firewalld
 
+rsync -rvK /ctx/system_files/ /
+
 git clone "https://github.com/noctalia-dev/noctalia-shell.git" /usr/share/lynx/noctalia-shell
     
     
