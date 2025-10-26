@@ -31,10 +31,25 @@ dnf5 install -y \
     brightnessctl \
     alacritty \
     rsms-inter-fonts \
-    just
+    just \
+    flatpak \
+    fastfetch \
+    nautilus \
+    gnome-keyring \
+    steam \
+    wl-clipboard \
+    greetd-selinux \
+    greetd \
+    tuigreet \
+    pipewire \
+    xwayland-satellite \
+    xdg-user-dirs \
+    wireplumber \
+    cava
 
 rm -rf /usr/share/doc/just
 
-systemctl enable gdm.service 
+systemctl enable greetd
+systemctl enable firewalld
     
     

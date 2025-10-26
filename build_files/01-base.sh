@@ -15,6 +15,8 @@ dnf5 install -y \
   plymouth-system-theme \
   git \
   unzip \
+  tuned \
+  tuned-ppd \
   rclone
 
 dnf -y remove console-login-helper-messages \
