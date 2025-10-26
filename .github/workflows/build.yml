@@ -35,7 +35,7 @@ jobs:
       packages: write
       id-token: write
 
-    steps:
+  steps:
       - name: Prepare environment
         run: |
           # Lowercase the image uri
