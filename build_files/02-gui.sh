@@ -24,10 +24,10 @@ dnf5 -y copr enable zirconium/packages
 dnf5 -y install matugen 
 dnf5 -y copr disable zirconium/packages
 
-dnf install \
+dnf -y install \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
-dnf install \
+dnf -y install \
   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # this installs a package from fedora repos
