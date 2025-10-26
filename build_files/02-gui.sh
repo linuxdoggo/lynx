@@ -32,8 +32,8 @@ dnf5 -y install ghostty
 dnf5 -y copr disable rivenirvana/ghostty
 
 dnf5 -y \
-    copr enable atim/starship
-    install starship
+    copr enable atim/starship \
+    install starship \
     copr disable atim/starship
 
 
