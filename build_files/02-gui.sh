@@ -57,7 +57,8 @@ dnf5 install -y \
     cava
 
 rm -rf /usr/share/doc/just
-
 systemctl enable firewalld
+
+git clone "https://github.com/noctalia-dev/noctalia-shell.git" /usr/share/lynx/noctalia-shell
     
     
