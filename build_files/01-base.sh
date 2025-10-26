@@ -19,7 +19,8 @@ dnf5 install -y \
   tuned-ppd \
   firewalld \
   rsync \
-  rclone
+  rclone \
+  glibc-locale-source
 
 dnf -y remove console-login-helper-messages \
   chrony
