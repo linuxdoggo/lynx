@@ -67,6 +67,7 @@ dnf5 install -y \
     bluetoothctl \
     ddcutil \
     cava \
+    lxappearance \
     papirus-icon-theme
 
 dnf5 install -y \
