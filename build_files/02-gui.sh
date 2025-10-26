@@ -43,8 +43,7 @@ dnf5 install -y \
     gnome-keyring \
     steam \
     wl-clipboard \
-    greetd-selinux \
-    greetd \
+    gdm \
     tuigreet \
     pipewire \
     xwayland-satellite \
@@ -54,7 +53,7 @@ dnf5 install -y \
 
 rm -rf /usr/share/doc/just
 
-systemctl enable greetd
+#systemctl enable greetd
 systemctl enable firewalld
     
     
