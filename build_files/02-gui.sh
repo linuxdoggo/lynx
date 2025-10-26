@@ -55,6 +55,8 @@ dnf5 install -y \
     xdg-desktop-portal \
     wlsunset \
     nvim \
+    bluetoothctl \
+    ddcutil \
     cava
 
 dnf5 install -y \
