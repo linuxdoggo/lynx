@@ -10,6 +10,7 @@ dnf5 -y copr enable yalter/niri-git
 echo "priority=1" | sudo tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
 dnf5 -y install niri
 dnf5 -y copr disable yalter/niri-git
+rm -rf /usr/share/doc/niri
 
 dnf5 -y copr enable brycensranch/gpu-screen-recorder-git
 dnf5 -y install gpu-screen-recorder-ui
@@ -29,7 +30,10 @@ dnf5 install -y \
     sddm \
     brightnessctl \
     alacritty \
-    rsms-inter-fonts
+    rsms-inter-fonts \
+    just
+
+rm -rf /usr/share/doc/just
 
 systemctl enable sddm.service 
     
