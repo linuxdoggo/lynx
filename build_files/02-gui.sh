@@ -4,6 +4,8 @@ set -ouex pipefail
 
 ### Install packages
 
+dnf -y install 'dnf5-command(config-manager)'
+
 dnf5 -y copr enable yalter/niri-git
 echo "priority=1" | sudo tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
 dnf5 -y install niri
