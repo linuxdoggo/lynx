@@ -13,9 +13,12 @@ set -ouex pipefail
 dnf5 install -y \
   plymouth
   plymouth-system-theme
+  git
+  unzip
+  rclone
 
 dnf -y remove console-login-helper-messages \
-    chrony
+  chrony
 
 # Use a COPR Example:
 #
