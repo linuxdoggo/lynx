@@ -54,7 +54,15 @@ dnf5 install -y \
     wireplumber \
     xdg-desktop-portal \
     wlsunset \
+    nvim \
     cava
+
+dnf5 install -y \
+    default-fonts-core-emoji \
+    google-noto-color-emoji-fonts \
+    google-noto-emoji-fonts \
+    glibc-all-langpacks \
+    default-fonts
 
 rm -rf /usr/share/doc/just
 systemctl enable firewalld
