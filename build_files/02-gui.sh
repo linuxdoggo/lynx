@@ -66,7 +66,8 @@ dnf5 install -y \
     nvim \
     bluetoothctl \
     ddcutil \
-    cava
+    cava \
+    papirus-icon-theme
 
 dnf5 install -y \
     default-fonts-core-emoji \
