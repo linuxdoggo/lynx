@@ -1,2 +1,2 @@
 #/bin/bash
-just -f /usr/share/lynx/just/01-just.just ${@}"
+just -f /usr/share/lynx/just/01-just.just "${@}"
