@@ -13,10 +13,10 @@ dnf5 -y install 'dnf5-command(config-manager)'
 
 setsebool -P domain_kernel_load_modules on
 
-dnf5 -y copr enable bieszczaders/kernel-cachyos
-dnf5 -y install kernel-cachyos-rt kernel-cachyos-rt-devel-matched
-dnf5 -y remove kernel kernel-devel
-dnf5 -y copr disable bieszczaders/kernel-cachyos
+#dnf5 -y copr enable bieszczaders/kernel-cachyos
+#dnf5 -y install kernel-cachyos-rt kernel-cachyos-rt-devel-matched
+#dnf5 -y remove kernel kernel-devel
+#dnf5 -y copr disable bieszczaders/kernel-cachyos
 
 # this installs a package from fedora repos
 dnf5 install -y \
