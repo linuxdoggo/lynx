@@ -1,0 +1,96 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json", // Optional: Provides IDE intelligence
+    "logo": { /* Logo configuration */ 
+        "color": {             // Override logo colors
+            "1": "green",
+        }
+    },
+    "display": { 
+    /* Display settings */ 
+	"separator": ": ",
+	"color": {
+	  "keys": "green",
+	  "title": "green"
+	},
+	"key": {
+	  "width": 13,
+	  "type": "string"
+	},
+	"bar": {
+	  "width": 10,
+	  "char": {
+            "elapsed": "■", // Character for elapsed portion
+            "total": "-",    // Character for total portion
+          },
+	},
+	"percent": {
+          "type": 9,         // 1=number, 2=bar, 3=both, 9=colored number
+          "color": {
+            "green": "green",
+            "yellow": "light_yellow",
+            "red": "light_red"
+          }
+    	}
+    },
+    "modules": [ 
+    /* Modules to display */ 
+	    "title",
+	    "separator",
+	    {
+            "type": "os",
+            "key": "os",
+	    },
+        {
+            "type": "kernel",
+            "key": "kernel",
+        },
+        {
+            "type": "initsystem",
+            "key": "initsystem",
+        },
+        "separator",
+        {
+            "type": "wm",
+            "key": "wm",
+        },
+        {
+            "type": "theme",
+            "key": "theme",
+        },
+        {
+            "type": "icons",
+            "key": "icons",
+        },
+        "separator",
+        {
+            "type": "memory",
+            "key": "ram",
+            "percent": {
+                "type": 2,     // Show both percentage number and bar
+                "green": 30,   // Values below 30% in green
+                "yellow": 70   // 30-70% in yellow, >70% in red
+            }
+        },
+        {
+            "type": "cpu",
+            "key": "cpu",
+        },
+        {
+            "type": "gpu",
+            "key": "gpu",
+        },
+        "separator",
+        {
+            "type": "terminal",
+            "key": "terminal",
+        },
+        {
+            "type": "uptime",
+            "key": "uptime",
+        },
+        {
+            "type": "packages",
+            "key": "packages",
+        },
+    ],
+}

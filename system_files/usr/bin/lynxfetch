@@ -1,0 +1,3 @@
+#!/bin/bash
+fastfetch --logo /usr/share/lynx/lynx.txt "${@}" 
+#--config /usr/share/zirconium/fastfetch.jsonc "${@}"
