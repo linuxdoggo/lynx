@@ -65,6 +65,7 @@ dnf5 install -y \
     wlsunset \
     nvim \
     bluetoothctl \
+    NetworkManager \
     ddcutil \
     cava \
     lxappearance \
