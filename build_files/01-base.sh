@@ -18,6 +18,19 @@ setsebool -P domain_kernel_load_modules on
 #dnf5 -y remove kernel kernel-devel
 #dnf5 -y copr disable bieszczaders/kernel-cachyos
 
+dnf -y install \
+    NetworkManager-wifi \
+    atheros-firmware \
+    brcmfmac-firmware \
+    iwlegacy-firmware \
+    iwlwifi-dvm-firmware \
+    iwlwifi-mvm-firmware \
+    mt7xxx-firmware \
+    nxpwireless-firmware \
+    realtek-firmware \
+    tiwilink-firmware \
+    firewalld
+
 # this installs a package from fedora repos
 dnf5 install -y \
   plymouth \
@@ -26,7 +39,6 @@ dnf5 install -y \
   unzip \
   tuned \
   tuned-ppd \
-  firewalld \
   rsync \
   rclone \
   glibc-locale-source
