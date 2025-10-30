@@ -72,6 +72,7 @@ dnf5 install -y \
     gnome-system-monitor \
     papirus-icon-theme \
     fzf \
+    qt6ct \
     chezmoi
 
 dnf5 install -y \
