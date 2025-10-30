@@ -85,5 +85,8 @@ systemctl enable firewalld
 rsync -rvK /ctx/system_files/ /
 
 git clone "https://github.com/noctalia-dev/noctalia-shell.git" /usr/share/lynx/noctalia-shell
+
+git clone "https://github.com/linuxdoggo/lynx-dots.git" /usr/share/lynx/lynx-dots
+cp -r /usr/share/lynx/lynx-dots/niri /etc/
     
     
