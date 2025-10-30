@@ -1,5 +1,5 @@
 [Unit]
-Description=chezmoi
+Description=Chezmoi
 ConditionPathExists=!%h/.config/lynx/chezmoi
 
 [Service]
