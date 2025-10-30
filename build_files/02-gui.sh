@@ -68,6 +68,7 @@ dnf5 install -y \
     ddcutil \
     cava \
     lxappearance \
+    gnome-system-monitor \
     papirus-icon-theme
 
 dnf5 install -y \
