@@ -8,6 +8,9 @@
     "display": { 
     /* Display settings */ 
 	"separator": ": ",
+    "constants": [
+            "──────────────────────────────"
+    ],
 	"color": {
 	  "keys": "green",
 	  "title": "green"
@@ -48,7 +51,7 @@
             "type": "initsystem",
             "key": "initsystem",
         },
-        "separator",
+        "break",
         {
             "type": "wm",
             "key": "wm",
@@ -61,7 +64,7 @@
             "type": "icons",
             "key": "icons",
         },
-        "separator",
+        "break",
         {
             "type": "memory",
             "key": "ram",
@@ -79,7 +82,7 @@
             "type": "gpu",
             "key": "gpu",
         },
-        "separator",
+        "break",
         {
             "type": "terminal",
             "key": "terminal",
@@ -92,5 +95,11 @@
             "type": "packages",
             "key": "packages",
         },
+        "break",
+         {
+            "type": "colors",
+            "paddingLeft": 0,
+            "symbol": "circle"
+        }
     ],
 }
