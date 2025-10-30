@@ -3,7 +3,13 @@
     "logo": { /* Logo configuration */ 
         "color": {             // Override logo colors
             "1": "green",
-        }
+        },
+        "padding": {
+            "top": 1,          // Top padding
+            "left": 0,         // Left padding
+            "right": 2,         // Right padding
+            "bottom": 1,
+        },
     },
     "display": { 
     /* Display settings */ 
