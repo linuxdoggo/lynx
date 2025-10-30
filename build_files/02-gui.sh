@@ -71,6 +71,7 @@ dnf5 install -y \
     lxappearance \
     gnome-system-monitor \
     papirus-icon-theme \
+    fzf \
     chezmoi
 
 dnf5 install -y \
