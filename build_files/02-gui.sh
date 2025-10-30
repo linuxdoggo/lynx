@@ -27,9 +27,9 @@ dnf5 -y copr enable zirconium/packages
 dnf5 -y install matugen cliphist
 dnf5 -y copr disable zirconium/packages
 
-dnf5 -y copr enable rivenirvana/ghostty
+dnf5 -y copr enable scottames/ghostty
 dnf5 -y install ghostty
-dnf5 -y copr disable rivenirvana/ghostty
+dnf5 -y copr disable scottames/ghostty
 
 dnf5 -y copr enable atim/starship 
 dnf5 -y install starship 
