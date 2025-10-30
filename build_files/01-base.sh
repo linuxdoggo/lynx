@@ -35,3 +35,9 @@ dnf -y remove console-login-helper-messages \
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl enable bootc-fetch-apply-updates
+
+tee /usr/lib/systemd/zram-generator.conf <<'EOF'
+[zram0]
+zram-size = min(ram, 8192)
+EOF
