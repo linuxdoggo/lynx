@@ -4,7 +4,7 @@ ConditionPathExists=!%h/.config/lynx/chezmoi
 
 [Service]
 ExecStart=mkdir -p %h/.config/lynx/chezmoi
-ExecStart=touch %h/.config/zirconium/chezmoi/chezmoi.toml
+ExecStart=touch %h/.config/lynx/chezmoi/chezmoi.toml
 ExecStart=chezmoi apply -S /usr/share/lynx/lynx-dots --config %h/.config/lynx/chezmoi/chezmoi.toml
 Type=oneshot
 
