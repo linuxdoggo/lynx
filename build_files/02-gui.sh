@@ -86,7 +86,10 @@ rsync -rvK /ctx/system_files/ /
 
 git clone "https://github.com/noctalia-dev/noctalia-shell.git" /usr/share/lynx/noctalia-shell
 
+cp "/usr/share/background/SH2-284.jpg" /usr/share/lynx/noctalia-shell/Assets/Wallpaper/noctalia.png
+
 git clone "https://github.com/linuxdoggo/lynx-dots.git" /usr/share/lynx/lynx-dots
-cp -r /usr/share/lynx/lynx-dots/niri /etc/
+install -d /etc/niri/
+cp -f /usr/share/lynx/lynx-dots/niri/config.kdl /etc/niri/config.kdl
     
     
