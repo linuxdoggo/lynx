@@ -105,7 +105,7 @@ cp "/usr/share/backgrounds/SH2-284.jpg" /usr/share/lynx/noctalia-shell/Assets/Wa
 
 git clone "https://github.com/linuxdoggo/lynx-dots.git" /usr/share/lynx/lynx-dots
 
-git clone "https://github.com/wrinkdater/Posys-Cursors-Improved-by-wrinkdater" /usr/share/lynx/cursors
-cp -r /usr/share/lynx/cursors/Black /usr/share/icons/
+git clone "https://github.com/simtrami/posy-improved-cursor-linux" /usr/share/lynx/cursors
+cp -r /usr/share/lynx/cursors/Posy_Cursor_Black /usr/share/icons/
     
     
