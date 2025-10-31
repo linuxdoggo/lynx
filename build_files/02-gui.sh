@@ -104,5 +104,8 @@ git clone "https://github.com/noctalia-dev/noctalia-shell.git" /usr/share/lynx/n
 cp "/usr/share/backgrounds/SH2-284.jpg" /usr/share/lynx/noctalia-shell/Assets/Wallpaper/noctalia.png
 
 git clone "https://github.com/linuxdoggo/lynx-dots.git" /usr/share/lynx/lynx-dots
+
+git clone "https://github.com/wrinkdater/Posys-Cursors-Improved-by-wrinkdater" /usr/share/lynx/cursors
+cp -r /usr/share/lynx/cursors/Black /usr/share/icons/
     
     
