@@ -35,6 +35,10 @@ dnf5 -y copr enable atim/starship
 dnf5 -y install starship 
 dnf5 -y copr disable atim/starship
 
+dnf5 -y copr enable ublue-os/packages  
+dnf5 -y install ublue-os-flatpak
+dnf5 -y copr disable ublue-os/packages 
+
 
 dnf -y install \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
@@ -49,7 +53,6 @@ dnf5 install -y \
     alacritty \
     rsms-inter-fonts \
     just \
-    flatpak \
     fastfetch \
     nautilus \
     gnome-keyring \
@@ -74,6 +77,7 @@ dnf5 install -y \
     fzf \
     qt6ct \
     totem-video-thumbnailer \
+    ffmpeg-thumbnailer \
     chezmoi
 
 dnf5 install -y \
@@ -82,6 +86,13 @@ dnf5 install -y \
     google-noto-emoji-fonts \
     glibc-all-langpacks \
     default-fonts
+
+dnf -y copr enable ublue-os/flatpak-test
+dnf -y copr disable ublue-os/flatpak-test
+dnf -y --repo=copr:copr.fedorainfracloud.org:ublue-os:flatpak-test swap flatpak flatpak
+dnf -y --repo=copr:copr.fedorainfracloud.org:ublue-os:flatpak-test swap flatpak-libs flatpak-libs
+dnf -y --repo=copr:copr.fedorainfracloud.org:ublue-os:flatpak-test swap flatpak-session-helper flatpak-session-helper
+rpm -q flatpak --qf "%{NAME} %{VENDOR}\n" | grep ublue-os
 
 rm -rf /usr/share/doc/just
 systemctl enable firewalld
