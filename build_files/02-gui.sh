@@ -77,7 +77,7 @@ dnf5 install -y \
     fzf \
     qt6ct \
     totem-video-thumbnailer \
-    ffmpeg-thumbnailer \
+    ffmpegthumbnailer \
     chezmoi
 
 dnf5 install -y \
