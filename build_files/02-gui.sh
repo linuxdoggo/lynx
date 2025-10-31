@@ -73,7 +73,6 @@ dnf5 install -y \
     papirus-icon-theme \
     fzf \
     qt6ct \
-    glycin \
     totem-video-thumbnailer \
     chezmoi
 
