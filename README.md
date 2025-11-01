@@ -15,4 +15,6 @@ currently the only way to install is to rebase from an existing fedora atomic in
 ```bash
 sudo bootc switch ghcr.io/linuxdoggo/lynx
 ```
+## wallpapers
 
+most of the wallpapers are sourced from unsplash, included in [this](https://unsplash.com/collections/J0nzaobsBrA/Lynx-image-collection) collection
