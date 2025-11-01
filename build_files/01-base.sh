@@ -41,6 +41,7 @@ dnf5 install -y \
   tuned-ppd \
   rsync \
   rclone \
+  polkit-kde \
   glibc-locale-source
 
 dnf -y remove console-login-helper-messages \
