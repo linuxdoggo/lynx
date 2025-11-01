@@ -4,7 +4,7 @@ Description=Timer for Chezmoi Update
 ConditionPathExists=%h/.config/lynx/chezmoi
 
 [Timer]
-OnBootSec=10s
+OnBootSec=5m
 OnUnitInactiveSec=1d
 
 [Install]
