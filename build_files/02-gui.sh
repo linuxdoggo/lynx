@@ -59,7 +59,6 @@ dnf5 install -y \
     steam \
     wl-clipboard \
     gdm \
-    tuigreet \
     pipewire \
     xwayland-satellite \
     xdg-user-dirs \
