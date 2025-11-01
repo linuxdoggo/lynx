@@ -1,0 +1,8 @@
+[Unit]
+Description=Chezmoi Update
+
+[Service]
+ExecStart=mkdir -p %h/.config/lynx/chezmoi
+ExecStart=touch %h/.config/lynx/chezmoi/chezmoi.toml
+ExecStart=sh -c 'yes s | chezmoi apply --no-tty --keep-going -S /usr/share/lynx/lynx-dots --verbose --config %h/.config/lynx/chezmoi/chezmoi.toml'
+Type=oneshot
