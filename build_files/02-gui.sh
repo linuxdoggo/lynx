@@ -76,7 +76,7 @@ dnf5 install -y \
     papirus-icon-theme \
     fzf \
     qt6ct \
-    totem-video-thumbnailer \
+    glycin-thumbnailer \
     ffmpegthumbnailer \
     chezmoi
 
