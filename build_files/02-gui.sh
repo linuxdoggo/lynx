@@ -112,6 +112,6 @@ systemctl enable flatpak-preinstall.service
 systemctl enable --global noctalia.service
 systemctl enable --global chezmoi.service
 systemctl enable --global chezmoi-update.timer
-systemctl preset --global chezmoi-init
+systemctl preset --global chezmoi
 systemctl preset --global chezmoi-update
     
