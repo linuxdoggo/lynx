@@ -49,6 +49,7 @@ dnf -y install \
 # this installs a package from fedora repos
 dnf5 install -y \
     google-roboto-fonts \
+    flatpak \
     brightnessctl \
     alacritty \
     rsms-inter-fonts \
