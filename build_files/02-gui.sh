@@ -107,5 +107,8 @@ git clone "https://github.com/linuxdoggo/lynx-dots.git" /usr/share/lynx/lynx-dot
 
 git clone "https://github.com/simtrami/posy-improved-cursor-linux" /usr/share/lynx/cursors
 cp -r /usr/share/lynx/cursors/Posy_Cursor_Black /usr/share/icons/
-    
+
+systemctl enable flatpak-preinstall.service
+systemctl enable --global noctalia.service
+systemctl enable --global chezmoi.service
     
