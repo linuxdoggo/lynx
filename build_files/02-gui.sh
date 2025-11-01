@@ -80,6 +80,13 @@ dnf5 install -y \
     ffmpegthumbnailer \
     chezmoi
 
+# qemu and virt-manager stuffs
+
+dnf5 install -y \
+    qemu \
+    libvirt \
+    virsh 
+
 dnf5 install -y \
     default-fonts-core-emoji \
     google-noto-color-emoji-fonts \
