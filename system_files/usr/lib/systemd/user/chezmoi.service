@@ -9,4 +9,4 @@ ExecStart=chezmoi apply -S /usr/share/lynx/lynx-dots --config %h/.config/lynx/ch
 Type=oneshot
 
 [Install]
-WantedBy=default.target 
+WantedBy=noctalia.service
