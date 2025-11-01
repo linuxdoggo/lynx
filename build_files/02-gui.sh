@@ -78,7 +78,7 @@ dnf5 install -y \
     qt6ct \
     glycin-thumbnailer \
     ffmpegthumbnailer \
-    xfce-polkit \
+    polkit-kde \
     chezmoi
 
 # qemu and virt-manager stuffs
@@ -87,7 +87,8 @@ dnf5 install -y \
     qemu \
     libvirt \
     virt-install \
-    virsh 
+    virsh \
+    virt-manager
 
 dnf5 install -y \
     default-fonts-core-emoji \
@@ -121,8 +122,8 @@ systemctl enable flatpak-preinstall.service
 systemctl enable --global noctalia.service
 systemctl enable --global chezmoi.service
 systemctl enable --global chezmoi-update.timer
-#systemctl enable --global plasma-polkit-agent.service
+systemctl enable --global plasma-polkit-agent.service
 systemctl preset --global chezmoi
 systemctl preset --global chezmoi-update
-#systemctl preset --global plasma-polkit-agent.service
+systemctl preset --global plasma-polkit-agent.service
     
