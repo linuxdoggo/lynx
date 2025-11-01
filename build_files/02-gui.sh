@@ -35,9 +35,9 @@ dnf5 -y copr enable atim/starship
 dnf5 -y install starship 
 dnf5 -y copr disable atim/starship
 
-dnf5 -y copr enable ublue-os/packages  
-dnf5 -y install ublue-os-flatpak
-dnf5 -y copr disable ublue-os/packages 
+#dnf5 -y copr enable ublue-os/packages  
+#dnf5 -y install ublue-os-flatpak
+#dnf5 -y copr disable ublue-os/packages 
 
 
 dnf -y install \
