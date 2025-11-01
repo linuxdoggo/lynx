@@ -43,6 +43,9 @@ dnf5 install -y \
   rclone \
   glibc-locale-source
 
+dnf -y remove console-login-helper-messages \
+    chrony
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
@@ -57,5 +60,5 @@ systemctl enable bootc-fetch-apply-updates
 
 tee /usr/lib/systemd/zram-generator.conf <<'EOF'
 [zram0]
-zram-size = min(ram, 8192)
+zram-size = min(ram, 16384)
 EOF
