@@ -86,6 +86,7 @@ dnf5 install -y \
 dnf5 install -y \
     qemu \
     libvirt \
+    virt-install \
     virsh 
 
 dnf5 install -y \

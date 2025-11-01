@@ -9,7 +9,7 @@ Documentation=man:flatpak-preinstall(1)
 [Service]
 Type=oneshot
 ExecStart=mkdir -p /var/lib/lynx
-ExecStart=/usr/bin/flatpak preinstall -y
+ExecStart=/usr/bin/flatpak preinstall --reinstall -y
 ExecStart=touch /var/lib/lynx/preinstall-finished
 RemainAfterExit=true
 Restart=on-failure
