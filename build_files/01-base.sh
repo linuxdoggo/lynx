@@ -43,9 +43,6 @@ dnf5 install -y \
   rclone \
   glibc-locale-source
 
-dnf -y remove console-login-helper-messages \
-  chrony
-
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
