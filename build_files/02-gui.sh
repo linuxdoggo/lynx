@@ -9,10 +9,10 @@ install -d /etc/niri
 
 dnf -y install 'dnf5-command(config-manager)'
 
-dnf5 -y copr enable yalter/niri
-echo "priority=1" | sudo tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri.repo
+dnf5 -y copr enable yalter/niri-git
+echo "priority=1" | sudo tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
 dnf5 -y install niri
-dnf5 -y copr disable yalter/niri
+dnf5 -y copr disable yalter/niri-git
 rm -rf /usr/share/doc/niri
 
 dnf5 -y copr enable brycensranch/gpu-screen-recorder-git
@@ -20,7 +20,7 @@ dnf5 -y install gpu-screen-recorder-ui
 dnf5 -y copr disable brycensranch/gpu-screen-recorder-git
 
 dnf5 -y copr enable errornointernet/quickshell
-dnf5 -y install quickshell
+dnf5 -y install quickshell-git
 dnf5 -y copr disable errornointernet/quickshell
 
 dnf5 -y copr enable zirconium/packages
