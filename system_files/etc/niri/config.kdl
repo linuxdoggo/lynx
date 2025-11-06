@@ -636,7 +636,7 @@ binds {
 }
  
 layer-rule {
-    match namespace="^quickshell-overview$"
+    match namespace="^noctalia-overview$"
     place-within-backdrop true
 }
  
@@ -645,5 +645,5 @@ debug {
 }
  
 switch-events {
-    lid-close { spawn "qs" "-p" "/usr/share/zirconium/noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
+    lid-close { spawn "qs" "-p" "/usr/share/lynx/noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
 }

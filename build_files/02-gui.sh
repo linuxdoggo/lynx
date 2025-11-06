@@ -90,6 +90,15 @@ dnf5 install -y \
     virsh \
     virt-manager
 
+add_wants_niri() {
+    sed -i "s/\[Unit\]/\[Unit\]\nWants=$1/" "/usr/lib/systemd/user/niri.service"
+}
+
+add_wants_niri chezmoi-init.service
+add_wants_niri plasma-polkit-agent.service
+add_wants_niri swayidle.service
+cat /usr/lib/systemd/user/niri.service
+
 dnf5 install -y \
     default-fonts-core-emoji \
     google-noto-color-emoji-fonts \
