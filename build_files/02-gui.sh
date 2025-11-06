@@ -129,10 +129,10 @@ cp -r /usr/share/lynx/cursors/Posy_Cursor_Black /usr/share/icons/
 
 systemctl enable flatpak-preinstall.service
 systemctl enable --global noctalia.service
-systemctl enable --global chezmoi.service
+systemctl enable --global chezmoi-init.service
 systemctl enable --global chezmoi-update.timer
 systemctl enable --global plasma-polkit-agent.service
-systemctl preset --global chezmoi.service
+systemctl preset --global chezmoi-init.service
 systemctl preset --global chezmoi-update.timer
 systemctl preset --global plasma-polkit-agent.service
     
