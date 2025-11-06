@@ -79,7 +79,7 @@ dnf5 install -y \
     glycin-thumbnailer \
     ffmpegthumbnailer \
     polkit-kde \
-    imagemagick \
+    ImageMagick \
     chezmoi
 
 # qemu and virt-manager stuffs
