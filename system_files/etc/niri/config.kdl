@@ -634,10 +634,11 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
- 
+
+// Set the overview wallpaper on the backdrop.
 layer-rule {
-    match namespace="^noctalia-overview$"
-    place-within-backdrop true
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true
 }
  
 debug {
