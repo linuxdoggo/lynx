@@ -51,7 +51,6 @@ dnf5 install -y \
     google-roboto-fonts \
     flatpak \
     brightnessctl \
-    alacritty \
     rsms-inter-fonts \
     just \
     fastfetch \
