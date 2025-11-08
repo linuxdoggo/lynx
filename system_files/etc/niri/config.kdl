@@ -125,7 +125,7 @@ layout {
     // - "always", the focused column will always be centered.
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
-    center-focused-column "on-overflow"
+    center-focused-column "never"
  
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
@@ -316,7 +316,7 @@ animations {
 // https://yalter.github.io/niri/Configuration:-Window-Rules
  
 window-rule {
-    geometry-corner-radius 6
+    geometry-corner-radius 16
     clip-to-geometry true
 }
  
