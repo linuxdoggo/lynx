@@ -79,7 +79,8 @@ dnf5 install -y \
     ffmpegthumbnailer \
     polkit-kde \
     ImageMagick \
-    chezmoi
+    chezmoi \
+    gamescope 
 
 # qemu and virt-manager stuffs
 
