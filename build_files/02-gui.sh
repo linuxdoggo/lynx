@@ -121,7 +121,7 @@ rsync -rvK /ctx/system_files/ /
 
 #noctalia shell
 mkdir -p /usr/share/lynx/noctalia-shell
-curl -sL https://github.com/noctalia-dev/noctalia-shell/releases/latest/download/noctalia-latest.tar.gz
+curl -sL https://github.com/noctalia-dev/noctalia-shell/releases/latest/download/noctalia-latest.tar.gz |
 tar -xz --strip-components=1 -C /usr/share/lynx/noctalia-shell
 rm -rf noctalia-latest.tar.gz
 #git clone "https://github.com/noctalia-dev/noctalia-shell.git" /usr/share/lynx/noctalia-shell
