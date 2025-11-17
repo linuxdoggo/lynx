@@ -119,15 +119,20 @@ systemctl enable firewalld
 
 rsync -rvK /ctx/system_files/ /
 
-git clone "https://github.com/noctalia-dev/noctalia-shell.git" /usr/share/lynx/noctalia-shell
-
+#noctalia shell
+mkdir -p /usr/share/lynx/noctalia-shell
+curl -sL https://github.com/noctalia-dev/noctalia-shell/releases/latest/download/noctalia-latest.tar.gz
+tar -xz --strip-components=1 -C /usr/share/lynx/noctalia-shell
+rm -rf noctalia-latest.tar.gz
+#git clone "https://github.com/noctalia-dev/noctalia-shell.git" /usr/share/lynx/noctalia-shell
 cp "/usr/share/backgrounds/SH2-284.jpg" /usr/share/lynx/noctalia-shell/Assets/Wallpaper/noctalia.png
 
+#dots and cursors
 git clone "https://github.com/linuxdoggo/lynx-dots.git" /usr/share/lynx/lynx-dots
-
 git clone "https://github.com/simtrami/posy-improved-cursor-linux" /usr/share/lynx/cursors
 cp -r /usr/share/lynx/cursors/Posy_Cursor_Black /usr/share/icons/
 
+#flatpak services
 systemctl enable flatpak-preinstall.service
 systemctl enable --global noctalia.service
 systemctl enable --global chezmoi-init.service
