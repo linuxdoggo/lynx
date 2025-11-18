@@ -80,6 +80,7 @@ dnf5 install -y \
     polkit-kde \
     ImageMagick \
     chezmoi \
+    rhythmbox \
     gamescope 
 
 # qemu and virt-manager stuffs
